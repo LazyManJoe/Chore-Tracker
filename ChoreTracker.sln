@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChoreTracker", "ChoreTracker\ChoreTracker.csproj", "{18AB7230-7DBB-4672-ABCF-0E99179083E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18AB7230-7DBB-4672-ABCF-0E99179083E4}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{18AB7230-7DBB-4672-ABCF-0E99179083E4}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{18AB7230-7DBB-4672-ABCF-0E99179083E4}.Release|iPhone.ActiveCfg = Release|iPhone
+		{18AB7230-7DBB-4672-ABCF-0E99179083E4}.Release|iPhone.Build.0 = Release|iPhone
+		{18AB7230-7DBB-4672-ABCF-0E99179083E4}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{18AB7230-7DBB-4672-ABCF-0E99179083E4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{18AB7230-7DBB-4672-ABCF-0E99179083E4}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{18AB7230-7DBB-4672-ABCF-0E99179083E4}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
