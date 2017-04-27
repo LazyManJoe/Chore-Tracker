@@ -52,6 +52,8 @@ namespace ChoreTracker
 
 			// Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
 			View.GestureRecognizers = PageViewController.GestureRecognizers;
+
+			// comment for test
 		}
 
 		[Export("pageViewController:spineLocationForInterfaceOrientation:")]
