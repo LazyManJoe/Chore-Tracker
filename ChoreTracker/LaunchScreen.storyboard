@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="Lanch Screen Final.png">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="Launch Screen Final.png">
                                 <rect key="frame" x="175" y="175" width="249" height="249"/>
                                 <constraints>
                                     <constraint id="17" firstAttribute="width" constant="250"/>
@@ -41,6 +41,42 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Lanch Screen Final.png" width="640" height="640"/>
+        <image name="Main Screen Day 1.png" width="640" height="640"/>
+        <image name="Main Screen Day 30.png" width="640" height="640"/>
+        <image name="Launch Screen Final.png" width="640" height="640"/>
+        <image name="Main Screen Day 2.png" width="640" height="640"/>
+        <image name="Main Screen Day 3.png" width="640" height="640"/>
+        <image name="Main Screen Day 4.png" width="640" height="640"/>
+        <image name="Main Screen Day 5.png" width="640" height="640"/>
+        <image name="Main Screen Day 6.png" width="640" height="640"/>
+        <image name="Main Screen Day 7.png" width="640" height="640"/>
+        <image name="Main Screen Day 8.png" width="640" height="640"/>
+        <image name="Main Screen Day 9.png" width="640" height="640"/>
+        <image name="Main Screen Day 10.png" width="640" height="640"/>
+        <image name="Main Screen Day 11.png" width="640" height="640"/>
+        <image name="Main Screen Day 12.png" width="640" height="640"/>
+        <image name="Main Screen Day 13.png" width="640" height="640"/>
+        <image name="Main Screen Day 14.png" width="640" height="640"/>
+        <image name="Main Screen Day 15.png" width="640" height="640"/>
+        <image name="Main Screen Day 16.png" width="640" height="640"/>
+        <image name="Main Screen Day 17.png" width="640" height="640"/>
+        <image name="Main Screen Day 18.png" width="640" height="640"/>
+        <image name="Main Screen Day 19.png" width="640" height="640"/>
+        <image name="Main Screen Day 20.png" width="640" height="640"/>
+        <image name="Main Screen Day 21.png" width="640" height="640"/>
+        <image name="Main Screen Day 22.png" width="640" height="640"/>
+        <image name="Main Screen Day 23.png" width="640" height="640"/>
+        <image name="Main Screen Day 24.png" width="640" height="640"/>
+        <image name="Main Screen Day 25.png" width="640" height="640"/>
+        <image name="Main Screen Day 26.png" width="640" height="640"/>
+        <image name="Main Screen Day 27.png" width="640" height="640"/>
+        <image name="Main Screen Day 28.png" width="640" height="640"/>
+        <image name="Main Screen Day 29.png" width="640" height="640"/>
+        <image name="Main Screen Day 31.png" width="640" height="640"/>
+        <image name="Main Screen Day Default.png" width="640" height="640"/>
+        <image name="bed.png" width="100" height="100"/>
+        <image name="broom.png" width="100" height="100"/>
+        <image name="hairbrush.png" width="100" height="100"/>
+        <image name="toothbrush.png" width="100" height="100"/>
     </resources>
 </document>

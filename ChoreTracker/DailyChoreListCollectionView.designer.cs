@@ -7,30 +7,31 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace ChoreTracker
 {
-    [Register ("DataViewController")]
-    partial class DataViewController
+    [Register ("DailyChoreListCollectionView")]
+    partial class DailyChoreListCollectionView
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel dataLabel { get; set; }
+        ChoreTracker.DailyChoreListCollectionViewController dataSource { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIImageView msDayNumber { get; set; }
+        ChoreTracker.DailyChoreListCollectionViewController @delegate { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (dataLabel != null) {
-                dataLabel.Dispose ();
-                dataLabel = null;
+            if (dataSource != null) {
+                dataSource.Dispose ();
+                dataSource = null;
             }
 
-            if (msDayNumber != null) {
-                msDayNumber.Dispose ();
-                msDayNumber = null;
+            if (@delegate != null) {
+                @delegate.Dispose ();
+                @delegate = null;
             }
         }
     }

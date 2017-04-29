@@ -16,7 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="104" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="212" y="285" width="176" height="30"/>
+                                <state key="normal" title="Show Collection View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue id="185" destination="92" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="203" firstItem="104" firstAttribute="width" constant="176"/>
+                                    <constraint id="204" firstItem="104" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="199" firstItem="104" firstAttribute="centerY" secondItem="502-Ir-ELC" secondAttribute="centerY"/>
+                            <constraint id="202" firstItem="104" firstAttribute="centerX" secondItem="502-Ir-ELC" secondAttribute="centerX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="showCollectionView" destination="104" id="name-outlet-104"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,32 +63,114 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
-                                <rect key="frame" x="20" y="44" width="560" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="63" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="125" y="125" width="350" height="350"/>
+                                <constraints>
+                                    <constraint id="66" firstItem="63" firstAttribute="width" constant="350"/>
+                                    <constraint id="67" firstItem="63" firstAttribute="height" constant="350"/>
+                                </constraints>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="s1b-V9-EN7" secondAttribute="trailing" constant="20" symbolic="YES" id="333-Jl-G0r"/>
-                            <constraint firstItem="s1b-V9-EN7" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="CIC-qa-9gW"/>
                             <constraint firstItem="cF2-Le-7mQ" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="PnF-O8-Bso"/>
-                            <constraint firstAttribute="bottom" secondItem="s1b-V9-EN7" secondAttribute="bottom" constant="20" symbolic="YES" id="Xg4-Xc-7kb"/>
                             <constraint firstAttribute="trailing" secondItem="cF2-Le-7mQ" secondAttribute="trailing" constant="20" symbolic="YES" id="cCk-mG-gz5"/>
-                            <constraint firstItem="s1b-V9-EN7" firstAttribute="top" secondItem="cF2-Le-7mQ" secondAttribute="bottom" constant="8" symbolic="YES" id="kQJ-gh-hu4"/>
                             <constraint firstItem="cF2-Le-7mQ" firstAttribute="top" secondItem="ZwX-cT-FIQ" secondAttribute="top" constant="20" symbolic="YES" id="zem-Jm-uYh"/>
+                            <constraint id="64" firstItem="63" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX"/>
+                            <constraint id="65" firstItem="63" firstAttribute="centerY" secondItem="ZwX-cT-FIQ" secondAttribute="centerY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dataLabel" destination="cF2-Le-7mQ" id="3EH-BK-JV6"/>
+                        <outlet property="msDayNumber" destination="63" id="name-outlet-63"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="594" y="-243"/>
         </scene>
+        <scene sceneID="91">
+            <objects>
+                <collectionViewController id="92" sceneMemberID="viewController" customClass="DailyChoreListCollectionViewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="93" customClass="DailyChoreListCollectionView">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="100">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="240" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="187" customClass="DailyChoreCollectionViewCell" reuseIdentifier="DailyChore">
+                                <rect key="frame" x="0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="218" reuseIdentifier="ChoreHeader" customClass="ChoreHeaderReusableCollectionView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="92" id="94"/>
+                            <outlet property="delegate" destination="92" id="95"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="choreGrid" destination="93" id="name-outlet-93"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="450"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Lanch Screen Final.png" width="640" height="640"/>
+        <image name="Main Screen Day 1.png" width="640" height="640"/>
+        <image name="Main Screen Day 30.png" width="640" height="640"/>
+        <image name="Launch Screen Final.png" width="640" height="640"/>
+        <image name="Main Screen Day 2.png" width="640" height="640"/>
+        <image name="Main Screen Day 3.png" width="640" height="640"/>
+        <image name="Main Screen Day 4.png" width="640" height="640"/>
+        <image name="Main Screen Day 5.png" width="640" height="640"/>
+        <image name="Main Screen Day 6.png" width="640" height="640"/>
+        <image name="Main Screen Day 7.png" width="640" height="640"/>
+        <image name="Main Screen Day 8.png" width="640" height="640"/>
+        <image name="Main Screen Day 9.png" width="640" height="640"/>
+        <image name="Main Screen Day 10.png" width="640" height="640"/>
+        <image name="Main Screen Day 11.png" width="640" height="640"/>
+        <image name="Main Screen Day 12.png" width="640" height="640"/>
+        <image name="Main Screen Day 13.png" width="640" height="640"/>
+        <image name="Main Screen Day 14.png" width="640" height="640"/>
+        <image name="Main Screen Day 15.png" width="640" height="640"/>
+        <image name="Main Screen Day 16.png" width="640" height="640"/>
+        <image name="Main Screen Day 17.png" width="640" height="640"/>
+        <image name="Main Screen Day 18.png" width="640" height="640"/>
+        <image name="Main Screen Day 19.png" width="640" height="640"/>
+        <image name="Main Screen Day 20.png" width="640" height="640"/>
+        <image name="Main Screen Day 21.png" width="640" height="640"/>
+        <image name="Main Screen Day 22.png" width="640" height="640"/>
+        <image name="Main Screen Day 23.png" width="640" height="640"/>
+        <image name="Main Screen Day 24.png" width="640" height="640"/>
+        <image name="Main Screen Day 25.png" width="640" height="640"/>
+        <image name="Main Screen Day 26.png" width="640" height="640"/>
+        <image name="Main Screen Day 27.png" width="640" height="640"/>
+        <image name="Main Screen Day 28.png" width="640" height="640"/>
+        <image name="Main Screen Day 29.png" width="640" height="640"/>
+        <image name="Main Screen Day 31.png" width="640" height="640"/>
+        <image name="Main Screen Day Default.png" width="640" height="640"/>
+        <image name="bed.png" width="100" height="100"/>
+        <image name="broom.png" width="100" height="100"/>
+        <image name="hairbrush.png" width="100" height="100"/>
+        <image name="toothbrush.png" width="100" height="100"/>
     </resources>
 </document>

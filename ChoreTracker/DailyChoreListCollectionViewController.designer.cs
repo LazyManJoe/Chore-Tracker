@@ -7,21 +7,22 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace ChoreTracker
 {
-    [Register ("RootViewController")]
-    partial class RootViewController
+    [Register ("DailyChoreListCollectionViewController")]
+    partial class DailyChoreListCollectionViewController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton showCollectionView { get; set; }
+        ChoreTracker.DailyChoreListCollectionView choreGrid { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (showCollectionView != null) {
-                showCollectionView.Dispose ();
-                showCollectionView = null;
+            if (choreGrid != null) {
+                choreGrid.Dispose ();
+                choreGrid = null;
             }
         }
     }

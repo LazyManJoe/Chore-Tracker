@@ -133,9 +133,76 @@
       <DependentUpon>DataViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelController.cs" />
+    <Compile Include="Chore.cs" />
+    <Compile Include="Chore.designer.cs">
+      <DependentUpon>Chore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyChoreListCollectionViewController.cs" />
+    <Compile Include="DailyChoreListCollectionViewController.designer.cs">
+      <DependentUpon>DailyChoreListCollectionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyChoreListCollectionView.cs" />
+    <Compile Include="DailyChoreListCollectionView.designer.cs">
+      <DependentUpon>DailyChoreListCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyChoreCollectionCell.cs" />
+    <Compile Include="DailyChoreCollectionCell.designer.cs">
+      <DependentUpon>DailyChoreCollectionCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyChoreCollectionViewCell.cs" />
+    <Compile Include="DailyChoreCollectionViewCell.designer.cs">
+      <DependentUpon>DailyChoreCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoreListModel.cs" />
+    <Compile Include="ChoreImageDatasource.cs" />
+    <Compile Include="ChoreHeaderreusableCollectionView.cs" />
+    <Compile Include="ChoreHeaderreusableCollectionView.designer.cs">
+      <DependentUpon>ChoreHeaderreusableCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoreHeaderReusableCollectionView_.cs" />
+    <Compile Include="ChoreHeaderReusableCollectionView_.designer.cs">
+      <DependentUpon>ChoreHeaderReusableCollectionView_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoreImageDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Lanch Screen Final.png" />
+    <BundleResource Include="Resources\Launch Screen Final.png" />
+    <BundleResource Include="Resources\Main Screen Day 1.png" />
+    <BundleResource Include="Resources\Main Screen Day 30.png" />
+    <BundleResource Include="Resources\Main Screen Day 2.png" />
+    <BundleResource Include="Resources\Main Screen Day 3.png" />
+    <BundleResource Include="Resources\Main Screen Day 4.png" />
+    <BundleResource Include="Resources\Main Screen Day 5.png" />
+    <BundleResource Include="Resources\Main Screen Day 6.png" />
+    <BundleResource Include="Resources\Main Screen Day 7.png" />
+    <BundleResource Include="Resources\Main Screen Day 8.png" />
+    <BundleResource Include="Resources\Main Screen Day 9.png" />
+    <BundleResource Include="Resources\Main Screen Day 10.png" />
+    <BundleResource Include="Resources\Main Screen Day 11.png" />
+    <BundleResource Include="Resources\Main Screen Day 12.png" />
+    <BundleResource Include="Resources\Main Screen Day 13.png" />
+    <BundleResource Include="Resources\Main Screen Day 14.png" />
+    <BundleResource Include="Resources\Main Screen Day 15.png" />
+    <BundleResource Include="Resources\Main Screen Day 16.png" />
+    <BundleResource Include="Resources\Main Screen Day 17.png" />
+    <BundleResource Include="Resources\Main Screen Day 18.png" />
+    <BundleResource Include="Resources\Main Screen Day 19.png" />
+    <BundleResource Include="Resources\Main Screen Day 20.png" />
+    <BundleResource Include="Resources\Main Screen Day 21.png" />
+    <BundleResource Include="Resources\Main Screen Day 22.png" />
+    <BundleResource Include="Resources\Main Screen Day 23.png" />
+    <BundleResource Include="Resources\Main Screen Day 24.png" />
+    <BundleResource Include="Resources\Main Screen Day 25.png" />
+    <BundleResource Include="Resources\Main Screen Day 26.png" />
+    <BundleResource Include="Resources\Main Screen Day 27.png" />
+    <BundleResource Include="Resources\Main Screen Day 28.png" />
+    <BundleResource Include="Resources\Main Screen Day 29.png" />
+    <BundleResource Include="Resources\Main Screen Day 31.png" />
+    <BundleResource Include="Resources\Main Screen Day Default.png" />
+    <BundleResource Include="Resources\bed.png" />
+    <BundleResource Include="Resources\broom.png" />
+    <BundleResource Include="Resources\hairbrush.png" />
+    <BundleResource Include="Resources\toothbrush.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
